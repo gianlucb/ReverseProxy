@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{8FC6F6B9-7627-41B8-91B1-B09661B557FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxyTest", "ReverseProxyTest\ReverseProxyTest.csproj", "{497305C9-DC76-4E45-8431-8B70CA56CF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC6F6B9-7627-41B8-91B1-B09661B557FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC6F6B9-7627-41B8-91B1-B09661B557FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC6F6B9-7627-41B8-91B1-B09661B557FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC6F6B9-7627-41B8-91B1-B09661B557FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497305C9-DC76-4E45-8431-8B70CA56CF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497305C9-DC76-4E45-8431-8B70CA56CF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497305C9-DC76-4E45-8431-8B70CA56CF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497305C9-DC76-4E45-8431-8B70CA56CF93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B4E928A-3B38-4F84-A6EB-B91BC457E9D2}
+	EndGlobalSection
+EndGlobal

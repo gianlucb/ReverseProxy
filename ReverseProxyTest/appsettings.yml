@@ -1,0 +1,26 @@
+﻿proxy:
+  listen:
+    address: "127.0.0.1"
+    port: 80
+
+  services:
+    - name: echo
+      domain: echo.com
+      strategy: roundrobin
+      hosts:
+        - address: "52.2.56.19/get?foo1=bar1"
+          port: 80
+        - address: "52.2.56.19/get?foo2=bar2"
+          port: 80
+    - name: generic
+      domain: generic.com
+      strategy: random
+      hosts:
+        - address: "www.gianlucabertelli.eu"
+          port: 80
+        - address: "www.apple.com"
+          port: 80
+
+  monitoring:
+    address: "127.0.0.1"
+    port: 8081
