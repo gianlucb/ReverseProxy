@@ -58,7 +58,7 @@ For example the _Succeded Calls %_ can be easily calculated if for every call we
 I would add a tracing mechanism (like application insigths of Azure or any other tracing software) to log every incoming request and the response of the proxy.
 This can be calculated in near real-time if the log are for example sent to an ElasticSearch cluster (+ kibana).
 
-In this PoC I put a simple "call tracer" to a local log file in a _csv_ form to be able to parse it later
+In this PoC I put a simple "call tracer" to a local log file in a _csv_ format to be able to parse it later
 
 ```csv
 6/30/2019 3:51:51 PM,http://scooterlabs.com/echo?foo2=bar2:80,True
