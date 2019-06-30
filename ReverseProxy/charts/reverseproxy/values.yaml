@@ -17,7 +17,6 @@ imagePullSecrets: []
 service:
   type: LoadBalancer
   port: 8080
-  
 
 probes:
   enabled: false
