@@ -20,15 +20,8 @@ To install the chart simply go to the main folder and execute
 ```cmd
 cd ReverseProxy\charts
 helm install ./reverseproxy --name=rp
+kubectl port-forward POD_NAME 8080:8080
 ```
-
-The chart creates a LoadBalancer service so after the install we just need for the public IP to get assigned
-
-```cmd
-kubectl get services
-```
-
-**_Actually on my kubernetes installation seems the LoadBalancer service is not working properly and is not forwarding the requests to the pod (that is running fine. confirmed with local port forwarding). I think is a limitation of my current setup. I do not have access to a real kubernetes cluster_**
 
 To delete after the use
 
