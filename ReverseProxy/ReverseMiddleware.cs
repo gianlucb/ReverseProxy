@@ -19,11 +19,18 @@ namespace ReverseProxy
         // needed to continue the pipeline in case we do not handle the request
         private readonly RequestDelegate _next;
 
+        // just one for the entire application
+        private static ITracer _tracer;
+
+
         public ILoadBalancer LoadBalancer { get; set; }
 
         public ReverseMiddleware(RequestDelegate nextMiddleware, ILoadBalancer loadBalancer)
         {
             _next = nextMiddleware;
+            if (_tracer == null)
+                _tracer = new LogFileTracer();
+
             LoadBalancer = loadBalancer;
 
             //extend the default number of outstanding http calls
@@ -37,6 +44,8 @@ namespace ReverseProxy
 
             if (targetServiceUri != null)
             {
+                bool callResult = false;
+
                 // build a new request - copy the original one
                 var targetRequestMessage = new HttpRequestMessage();
                 targetRequestMessage.RequestUri = targetServiceUri;
@@ -46,6 +55,7 @@ namespace ReverseProxy
 
                 try
                 {
+
                     using (var response = await _httpClient.SendAsync(targetRequestMessage, HttpCompletionOption.ResponseHeadersRead, context.RequestAborted))
                     {
                         response.EnsureSuccessStatusCode();
@@ -61,16 +71,30 @@ namespace ReverseProxy
 
                         //copy content
                         await response.Content.CopyToAsync(context.Response.Body);
-                        return;
+                        callResult = true;
+                      
                     };
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     //wrong address or something happened on the target service
+                    Trace.WriteLine(ex.Message);
                     context.Response.StatusCode = (int)HttpStatusCode.BadGateway;
-                    return;
+                  
                 }
+                finally
+                {
+                    _tracer.TraceCallAsync(targetServiceUri.AbsoluteUri, callResult);
+                   
+                }
+                return;
             }
+            else
+            {
+                // next hop not found
+                context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+            }
+
 
             await _next(context);
         }

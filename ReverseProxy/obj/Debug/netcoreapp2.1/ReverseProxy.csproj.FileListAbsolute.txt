@@ -1,0 +1,16 @@
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\appsettings.yml
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\ReverseProxy.deps.json
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\ReverseProxy.runtimeconfig.json
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\ReverseProxy.runtimeconfig.dev.json
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\ReverseProxy.dll
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\bin\Debug\netcoreapp2.1\ReverseProxy.pdb
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.csprojAssemblyReference.cache
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.csproj.CoreCompileInputs.cache
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.RazorAssemblyInfo.cache
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.RazorAssemblyInfo.cs
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.AssemblyInfoInputs.cache
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.AssemblyInfo.cs
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.RazorTargetAssemblyInfo.cache
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.dll
+C:\Users\gianlucb\Desktop\rp2\ReverseProxy\obj\Debug\netcoreapp2.1\ReverseProxy.pdb

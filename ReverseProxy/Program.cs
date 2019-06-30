@@ -12,7 +12,7 @@ namespace ReverseProxy
         public static void Main(string[] args)
         {
             var b = CreateWebHostBuilder(args);
-            b.UseUrls("http://localhost:80"); //this should be read from YAML file. But this is a current limitation of .NET core (cannot read conf before to build it)
+            b.UseUrls("http://localhost:8080"); //this should be read from YAML file. But this is a current limitation of .NET core (cannot read conf before to build it)
             b.Build().Run();
         }
 
